@@ -17,7 +17,7 @@ require '../includes/header.php';
 ?>
 <div class="row justify-content-center">
     <div class="col-md-9">
-        <a href="../index.php" class="btn btn-outline-secondary btn-sm mb-3">&larr; Articles Section</a>
+        <a href="../" class="btn btn-outline-secondary btn-sm mb-3">&larr; Articles Section</a>
         <div class="card shadow-lg border-0">
             <div class="card-body p-5">
                 <h1 class="card-title mb-3"><?php echo htmlspecialchars($post['title']); ?></h1>
