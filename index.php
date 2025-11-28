@@ -4,6 +4,8 @@
     $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
     require 'includes/header.php';
 ?>
+
+
 <div class="d-flex justify-content-between align-items-center mb-4">
     <h1>My Articles</h1>
     <a href="create.php" class="btn btn-primary">+ New Article</a>
@@ -17,7 +19,7 @@
                     <p class="card-text">
                         <?php echo nl2br(htmlspecialchars(substr($post['content'], 0, 100))); ?>...
                     </p>
-                    <a href="post.php?id=<?=$post['id'];?>" class="btn btn-primary">Read More</a>
+                    <a href="/views/post-view.php?id=<?=$post['id'];?>" class="btn btn-primary">Read More</a>
                     <h6 class="card-subtitle mb-2 text-muted">
                         <small><?php echo $post['created_at']; ?></small>
                     </h6>
